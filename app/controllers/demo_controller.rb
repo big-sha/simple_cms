@@ -10,4 +10,13 @@ class DemoController < ApplicationController
     render('index')
   end
 
+  def other_hello
+    #redirect_to(:action => 'index')
+   redirect_to(:action => 'hello')
+  end
+
+  def lynda
+    redirect_to "http://www.lynda.com"
+  end
+
 end

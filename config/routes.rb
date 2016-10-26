@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   root 'demo#index' 
     get 'demo/index' # Short Hand Simple match Route
     get 'demo/hello'
+    get 'demo/other_hello'
+    get 'demo/lynda'
     # Long Hand Simple Match Route
     # match 'demo/index', :to => 'demo#index', :via =. :get
     
