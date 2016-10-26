@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # Short Hand Root Route
   root 'demo#index' 
     get 'demo/index' # Short Hand Simple match Route
-
+    get 'demo/hello'
     # Long Hand Simple Match Route
     # match 'demo/index', :to => 'demo#index', :via =. :get
     
