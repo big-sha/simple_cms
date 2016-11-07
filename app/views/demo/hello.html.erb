@@ -22,3 +22,9 @@ end
 
     <a href="/demo/index">HTML Link to Index Page</a><br />
     <%= link_to('Rails Link to Index Page', {:action => 'index'}) %><br />
+    <br />
+
+    ID: <%= @id %><br />
+    ID: <%= params[:id] %><br /> 
+    Page: <%= @page %> <br />
+    Next Page: <%= @page.to_i + 1 %><br />
