@@ -1,17 +1,24 @@
 <h1>Hello World!</h1>
 <p>This is from the Hello Template View</p>
 
-<%= 1 + 1 %>
+<%= 1 + 1 %><br />
 </br>
 <% target = "World!" %>
 
-<%= "Hello #{target}" %>
+<%= "Hello #{target}" %><br />
 </br>
 <%= 3.times do |n| 
   puts n 
 end
   %>
   </br>
-  <% 3.times do |n| %>
-  <%= n %></br>
-  <% end %>
+  <% 3.times do |n| %><br />
+  <%= n %>
+  <% end %><br />
+
+  <% @array.each do |n| %><br />
+    <%= n %>
+    <% end %><br />
+
+    <a href="/demo/index">HTML Link to Index Page</a><br />
+    <%= link_to('Rails Link to Index Page', {:action => 'index'}) %><br />
